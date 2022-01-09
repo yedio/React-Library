@@ -23,6 +23,13 @@ ${reset}
       border-radius: 3px;
     }
 
+    .redux-test{
+        border: 5px solid pink;
+  margin: 10px;
+  padding: 10px;
+  color: lightpink;
+    }
+
     input{
         display: flex;
         outline: none;
