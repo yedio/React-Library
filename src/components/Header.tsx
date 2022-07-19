@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 export default function Header() {
-  return <NavWrapper>YEJU MINI-PROJECT</NavWrapper>;
+  return <NavWrapper>🍋</NavWrapper>;
 }
 
 const NavWrapper = styled.section`
