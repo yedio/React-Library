@@ -5,6 +5,7 @@ import Footer from './components/Footer';
 import Main from './pages/Main/Main';
 import Accordion from './pages/Accordion/Accordion';
 import Cookie from './pages/Cookie/Cookie';
+import Xlsx from './pages/Xlsx/Xlsx';
 
 export default function Router() {
   return (
@@ -13,6 +14,7 @@ export default function Router() {
       <Routes>
         <Route path="/" element={<Main />} />
         <Route path="/cookie" element={<Cookie />} />
+        <Route path="/xlsx" element={<Xlsx />} />
         <Route path="/accordion" element={<Accordion />} />
       </Routes>
       <Footer />
