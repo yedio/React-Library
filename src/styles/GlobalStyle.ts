@@ -1,34 +1,10 @@
-import { createGlobalStyle } from 'styled-components';
 import reset from 'styled-reset';
+import { createGlobalStyle } from 'styled-components';
+import { customReset } from './customReset';
 
 const GlobalStyle = createGlobalStyle`
-${reset}
-
-  * {
-      padding: 0;
-      margin: 0;
-      box-sizing: border-box;
-      font-family: 'Noto Sans KR', sans-serif;
-  }
-
-  a {
-      text-decoration: none;
-      color: black;
-  }
-  
-  button{
-      display: flex;
-      cursor: pointer;
-      outline: none;
-      border-radius: 3px;
-    }
-
-    input{
-        display: flex;
-        outline: none;
-        padding-left: 10px;
-        }
-	
+${reset};
+${customReset};
 `;
 
 export default GlobalStyle;
