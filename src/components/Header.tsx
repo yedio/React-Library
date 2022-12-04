@@ -1,8 +1,14 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import styled from 'styled-components';
 
 export default function Header() {
-  return <NavWrapper>🍋</NavWrapper>;
+  const navigate = useNavigate();
+  return (
+    <NavWrapper>
+      <Logo onClick={() => navigate('/')}>🍋</Logo>
+    </NavWrapper>
+  );
 }
 
 const NavWrapper = styled.section`
@@ -10,6 +16,10 @@ const NavWrapper = styled.section`
   justify-content: center;
   align-items: center;
   padding: 20px 0;
-  font-size: 30px;
   background-color: lightgray;
+`;
+
+const Logo = styled.div`
+  font-size: 30px;
+  cursor: pointer;
 `;
